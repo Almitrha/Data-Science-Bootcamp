@@ -184,13 +184,11 @@ for code, credit, limit in zip(ders_kodu, kredi, kontenjan):
 kume1 = set(["data", "python"])
 kume2 = set(["data", "function", "qcut", "lambda", "python", "miuul"])
 
-def kume_analiz(kume1, kume2):
-    ortak_elemanlar = kume1 & kume2
-    if ortak_elemanlar:
-        return "Ortak Elemanlar: ", ortak_elemanlar
+def common_difference(set1, set2):
+    if set1.issubset(set2):
+        return set1 & set2
     else:
-        return "2. Küme 1. Kümeden Farklı Elemanlar: ", kume2 - kume1
-
-
-kume_analiz(kume1,kume2)
+        return set2 - set1
+        
+common_difference(kume1, kume2)
 
