@@ -55,7 +55,7 @@
 
 # Soru 1: persona.csv dosyasını okutunuz ve veri seti ile ilgili genel bilgileri gösteriniz.#
 import pandas as pd
-import seaborn as sns
+
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 1000)
